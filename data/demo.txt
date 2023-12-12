@@ -1,0 +1,37 @@
+我需要一个RPG maker 事件数据转化脚本，"events": [null, {"id": 1, "name": " ", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 241, "indent": 0, "parameters": [{"name": "吸气3", "volume": 90, "pitch": 100, "pan": 0}]}, {"code": 231, "indent": 0, "parameters": [1, "cg1", 0, 0, 0, 0, 100, 100, 255, 0]}, {"code": 101, "indent": 0, "parameters": ["", 0, 2, 1]}, {"code": 401, "indent": 0, "parameters": ["\\>                                             \\<-请输入姓名-"]}, {"code": 303, "indent": 0, "parameters": [3, 8]}, {"code": 101, "indent": 0, "parameters": ["", 0, 2, 1]}, {"code": 401, "indent": 0, "parameters": ["\\>                                             \\<-正在模拟-"]}, {"code": 101, "indent": 0, "parameters": ["", 0, 2, 1]},以上为需要转化的原文，以下是参考的结果事件ID: 1
+名称: 空
+备注: 空
+
+页面 1:
+条件:
+角色: 无
+物品: 无
+自开关: A, 无
+开关1: 1, 无
+开关2: 1, 无
+变量: 1, 无, 值: 0
+
+图像:
+角色图像: 无
+方向: 下
+模式: 正常
+图块ID: 0
+
+移动:
+类型: 固定的
+速度: 普通
+频度: 3
+选项: 步行动画, 向下固定, 优先级相同
+路线: 重复动作, 忽略不能移动的事件, 等待完成
+
+触发: 碰触
+
+事件内容:
+播放SE: 吸气3, 音量: 90, 音调: 100, 左右声道: 0
+显示图片: 图片1, 文件名: cg1, 原点: 左上角, 坐标: (0,0), 缩放: (100%,100%), 透明度: 255, 混合方式: 0
+显示文字: 无, 窗口, 底部
+>                                             <-请输入姓名-
+显示选择项: 选项3, 取消: 分支8
+显示文字: 无, 窗口, 底部
+>                                             <-正在模拟-
+

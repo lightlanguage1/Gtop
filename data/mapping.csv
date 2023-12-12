@@ -1,0 +1,596 @@
+﻿Code,Name,Parameter,,,,,,,,,,,,,,,,,,,,
+101,Show Text,"0:Face graphic file name
+1:Face Graphic Index
+2:Background (0:Window 1:Darken 2:Transparent)
+3:Position (0:Upper 1:Middle 2:Lower)
+4:Name",,,,,,,,,,,,,,,,,,,,
+401,Show Text (message content),0:Message string,,,,,,,,,,,,,,,,,,,,
+102,Show Choices,"0:choice array
+1:Cancel Type (-2:Branching -1:Prohibited 0. 0... :each choice)
+2:Default type (-1:none 0... :each choice) :each choice)
+3:Background (0:Window 1:Darken 2:Transparent)
+4:Position (0:Left 1:Middle 2:Right)",,,,,,,,,,,,,,,,,,,,
+103,Input Number,"0:variable
+1:Number of digits",,,,,,,,,,,,,,,,,,,,
+104,Select Item,"0:Variable
+1:item type (0:normal item 1:important thing 2:hidden item A 3:hidden item B)",,,,,,,,,,,,,,,,,,,,
+402,Show Choice (when **),0:Alternative name,,,,,,,,,,,,,,,,,,,,
+403,Show Choice (when canceling),-,,,,,,,,,,,,,,,,,,,,
+105,Show Scrolling Text,"0:Speed
+1:No fast forward",,,,,,,,,,,,,,,,,,,,
+405,Show Scrolling Text (message content),0:Message string,,,,,,,,,,,,,,,,,,,,
+108,Comment,0:Annotation string,,,,,,,,,,,,,,,,,,,,
+408,Note (line 2 onwards),0:Annotation string,,,,,,,,,,,,,,,,,,,,
+111,Conditional Branch,"0:conditional items (0:switches 1:variables 2:self-switches 3:timers 4:actors 5:enemy characters 6:characters 7:money 8:items 9:weapons 10:armor 11:buttons 12:scripts 13:vehicles)
+1:Conditional Content 1
+2:Conditional Content 2",,,,,,,,,,,,,,,,,,,,
+411,Conditional Branch (else),-,,,,,,,,,,,,,,,,,,,,
+112,Loop,-,,,,,,,,,,,,,,,,,,,,
+413,Loop (repeat),-,,,,,,,,,,,,,,,,,,,,
+113,Break Loop,-,,,,,,,,,,,,,,,,,,,,
+115,Exit Event Processing,-,,,,,,,,,,,,,,,,,,,,
+117,Common Event,0:Common Event ID,,,,,,,,,,,,,,,,,,,,
+118,Label,0:Label name,,,,,,,,,,,,,,,,,,,,
+119,Jump to Label,0:Label name,,,,,,,,,,,,,,,,,,,,
+121,Control Switches,"0:Start number.
+1:End number
+2:Set value (0:ON 1:OFF)",,,,,,,,,,,,,,,,,,,,
+122,Control Variables,"0:Start number.
+1:End number
+2:Operation(0:Assignment 1:Addition 2:Subtraction 3:Multiplication 4:Division 5:Surplus)
+3:Operand(0:Constant 1:Variable 2:Random Number 3:Game Data 4:Script)
+4:Operand setting contents 1
+5:Operand setting contents 2
+6:Operand Setting Contents 3",,,,,,,,,,,,,,,,,,,,
+123,Control Self Switch,"0:Self switch (A or B or C or D)
+1:Set value (0:ON 1:OFF)",,,,,,,,,,,,,,,,,,,,
+124,Control Timer,"0:Operation (0:Start 1:Stop)
+1:Seconds.",,,,,,,,,,,,,,,,,,,,
+125,Change Gold,"0:operation (0:increase 1:decrease)
+1:Operand type (0:Constant 1:Variable)
+2:Operand (set value or variable number)",,,,,,,,,,,,,,,,,,,,
+126,Change Items,"0:Item ID
+1:Operation (0:Increase 1:Decrease)
+2:Operand type (0:Constant, 1:Variable)
+3:Operand (set value or variable number)",,,,,,,,,,,,,,,,,,,,
+127,Change Weapons,"0:Weapon ID
+1:Operation (0:Increase 1:Decrease)
+2:Operand type (0:Constant, 1:Variable)
+3:Operand (set value or variable number)
+4:Include equipment (true or false)",,,,,,,,,,,,,,,,,,,,
+128,Change Armors,"0:Armor ID
+1:Operation (0:Increase 1:Decrease)
+2:Operand type (0:Constant, 1:Variable)
+3:Operand (set value or variable number)
+4:Include equipment (true or false)",,,,,,,,,,,,,,,,,,,,
+129,Change Party Member,"0:Actor ID
+1:Operation (0:Add 1:Remove)
+2:Initialization (true or false)",,,,,,,,,,,,,,,,,,,,
+132,Change Battle BGM,0:BGM data,,,,,,,,,,,,,,,,,,,,
+133,Change Victory ME,0:ME data,,,,,,,,,,,,,,,,,,,,
+134,Change Save Access,0:Set value (0:Inhibited 1:Permitted),,,,,,,,,,,,,,,,,,,,
+135,Change Menu Access,0:Set value (0:Inhibited 1:Permitted),,,,,,,,,,,,,,,,,,,,
+136,Change Encounter,0:Set value (0:Inhibited 1:Permitted),,,,,,,,,,,,,,,,,,,,
+137,Change Formation Access,0:Set value (0:Inhibited 1:Permitted),,,,,,,,,,,,,,,,,,,,
+138,Change Window Color,"0:color array ([R, G, B])",,,,,,,,,,,,,,,,,,,,
+139,Change Defeat ME,0:ME data,,,,,,,,,,,,,,,,,,,,
+140,Change Vehicle BGM,0:BGM data,,,,,,,,,,,,,,,,,,,,
+201,Transfer Player,"0:Location(0:Directly specified 1:Variable)
+1:Map ID
+2:X coordinate
+3:Y coordinate
+4:Orientation (0:As is 2:Down 4:Left 6:Right 8:Up)
+5:Fade(0:Black 1:White 2:None)",,,,,,,,,,,,,,,,,,,,
+202,Set Vehicle Location,"0:Vehicle(0:Small Ship 1:Large Ship 2:Airship)
+1:Location(0:Directly specified 1:Variable)
+2:Map ID
+3:X coordinate
+4:Y coordinate",,,,,,,,,,,,,,,,,,,,
+203,Set Event Location,"0:Event ID
+1:Specification method (0:Directly 1:Exchange with other events 2:Exchange with other events)
+2:X coordinate
+3:Y coordinate
+4:Other Event IDs
+5:Orientation(0:As is 2:Down 4:Left 6:Right 8:Up)",,,,,,,,,,,,,,,,,,,,
+204,Scroll Map,"0:Direction(2:Down 4:Left 6:Right 8:Up)
+1:Distance
+2:Speed(1. .6)
+3:Wait to completion (true or false)",,,,,,,,,,,,,,,,,,,,
+205,Set Movement Route,"0:character ID (-1:player 0:this event 1... :event with specified ID) :event with the specified ID)
+1:Movement route data",,,,,,,,,,,,,,,,,,,,
+206,Get on/off Vehicle,-,,,,,,,,,,,,,,,,,,,,
+211,Change Transparency,0:Set value (0:ON 1:OFF),,,,,,,,,,,,,,,,,,,,
+212,Show Animation,"0:character ID (-1:player 0:this event 1... :event with the specified ID)
+1:Animation ID
+2:Wait to completion (true or false).",,,,,,,,,,,,,,,,,,,,
+213,Show Balloon Icon,"0:character ID (-1:player 0:this event 1... :event with specified ID) :event with the specified ID)
+1:Balloon icon type (1:Surprise 2:Question...)
+2:Waitt to completion (true or false)",,,,,,,,,,,,,,,,,,,,
+214,Erase Event,-,,,,,,,,,,,,,,,,,,,,
+216,Change Player Followers,0:Set value (0:ON 1:OFF),,,,,,,,,,,,,,,,,,,,
+217,Gather Followers,-,,,,,,,,,,,,,,,,,,,,
+221,Fadeout Screen,-,,,,,,,,,,,,,,,,,,,,
+222,Fadein Screen,-,,,,,,,,,,,,,,,,,,,,
+223,Tint Screen,"0:tonal array ([R, G, B, Gray])
+1:Number of frames
+2:Wait to completion (true or false)",,,,,,,,,,,,,,,,,,,,
+224,Flash Screen,"0:color array ([R, G, B, Alpha])
+1:Number of frames
+2:Wait to completion (true or false)",,,,,,,,,,,,,,,,,,,,
+225,Shake Screen,"0:Strength
+1:Speed
+2:Number of frames
+3:Wait to completion (true or false)",,,,,,,,,,,,,,,,,,,,
+230,Wait,0:Number of wait frames,,,,,,,,,,,,,,,,,,,,
+231,Show Picture,"0:Picture number
+1:Picture file name
+2:Origin (0:Upper Left 1:Center)
+3:Directly specified or variable(0:Directly specified 1:Variable)
+4:X coordinate
+5:Y coordinate
+6:Magnification (width)
+7:Magnification (height)
+8:Opacity
+9:Blend mode (0:Normal 1:Add 2:Multiply 3:Screen)",,,,,,,,,,,,,,,,,,,,
+232,Move Picture,"0:Picture number
+1:Unused
+2:Origin (0:Upper Left 1:Center)
+3:Directly specified or variable(0:Directly specified 1:Variable)
+4:X coordinate
+5:Y coordinate
+6:Magnification (width)
+7:Magnification (height)
+8:Opacity
+9:Blend mode (0:Normal 1:Add 2:Multiply 3:Screen)
+10:Number of frames
+11:Wait until completion (true or false)
+12:Easing type (0:constant speed, 1:starts slowly, 2:ends slowly, 3:starts slowly and ends slowly)",,,,,,,,,,,,,,,,,,,,
+233,Rotate Picture,"0:Picture number
+1:Rotation Speed",,,,,,,,,,,,,,,,,,,,
+234,Tint Picture,"0:Picture number
+1:Color array ([R, G, B, G])
+2:Number of frames
+3:Wait to completion (true or false)",,,,,,,,,,,,,,,,,,,,
+235,Erase Picture,0:Picture number,,,,,,,,,,,,,,,,,,,,
+236,Set Weather Effect,"0:type (none or rain or snow or storm)
+1:Strength
+2:Number of Frames
+3:Wait to completion (true or false)",,,,,,,,,,,,,,,,,,,,
+241,Play BGM,0:BGM data,,,,,,,,,,,,,,,,,,,,
+242,Fadeout BGM,0:seconds,,,,,,,,,,,,,,,,,,,,
+243,Save BGM,-,,,,,,,,,,,,,,,,,,,,
+244,Replay GBGM,-,,,,,,,,,,,,,,,,,,,,
+245,Play BGS,0:BGM data,,,,,,,,,,,,,,,,,,,,
+246,Fadeout BGS,0:seconds,,,,,,,,,,,,,,,,,,,,
+249,Play ME,0:ME data,,,,,,,,,,,,,,,,,,,,
+250,Play SE,0:SE data,,,,,,,,,,,,,,,,,,,,
+251,Stop SE,-,,,,,,,,,,,,,,,,,,,,
+261,Play Movie,0:Movie file name,,,,,,,,,,,,,,,,,,,,
+281,Change Map Name Display,0:Set value (0:ON 1:OFF),,,,,,,,,,,,,,,,,,,,
+282,Change Tileset,0:Tile set ID,,,,,,,,,,,,,,,,,,,,
+283,Change Battle Background,"0:Battle Background 1 File name
+1:Battle Background 2 File Name",,,,,,,,,,,,,,,,,,,,
+284,Change Parallax,"0:Image file name
+1:Lateral loops.
+2:Vertical loop
+3:Scroll speed (horizontal)
+4:Scroll speed (vertical)",,,,,,,,,,,,,,,,,,,,
+285,Get Location Info,"0:Variable to store the result
+1:Information Type(0:Terrain Tag 1:Event ID 2:Tile ID1 3:Tile ID2 4:Tile ID3 5:Tile ID4 6:Region ID)
+2:Directly specified or variable(0:Directly specified 1:Variable)
+3:X coordinate
+4:Y coordinate",,,,,,,,,,,,,,,,,,,,
+301,Battle Processing,"0:enemy group (0:direct 1:variable 2:same as encounter)
+1:Escape is possible
+2:Defeat is possible",,,,,,,,,,,,,,,,,,,,
+601,Battle Processing (when you win),-,,,,,,,,,,,,,,,,,,,,
+602,Battle Processing (when you run away),-,,,,,,,,,,,,,,,,,,,,
+603,Battle Processing (when you lose),-,,,,,,,,,,,,,,,,,,,,
+302,Shop Processing (after line 2),"0:Item(0:Item 1:Weapon 2:Armor)
+1:Item (Weapon, Armor) ID
+2:Price (0:Standard 1:Specification)
+3:Price specified value
+4:Purchase only",,,,,,,,,,,,,,,,,,,,
+605,Shop Processing (after line 2),"0:Item(0:Item 1:Weapon 2:Armor)
+1:Item (Weapon, Armor) ID
+2:Price (0:Standard 1:Specification)
+3:Price specified value",,,,,,,,,,,,,,,,,,,,
+303,Name Input Processing,"0:Actor ID
+1:Maximum number of characters",,,,,,,,,,,,,,,,,,,,
+311,Change HP,"0:actor(0:fixed 1:variable)
+1:Actor ID (0:All)
+2:Operation (0:Increase 1:Decrease)
+3:Operand type (0:Constant, 1:Variable)
+4:Operand (set value or variable number)
+5:Allow disablement (true or false)",,,,,,,,,,,,,,,,,,,,
+312,Change MP,"0:actor(0:fixed 1:variable)
+1:Actor ID (0:All)
+2:Operation (0:Increase 1:Decrease)
+3:Operand type (0:Constant, 1:Variable)
+4:Operand (set value or variable number)",,,,,,,,,,,,,,,,,,,,
+326,Change TP,"0:actor(0:fixed 1:variable)
+1:Actor ID (0:All)
+2:Operation (0:Increase 1:Decrease)
+3:Operand type (0:Constant, 1:Variable)
+4:Operand (set value or variable number)",,,,,,,,,,,,,,,,,,,,
+313,Change State,"0:actor(0:fixed 1:variable)
+1:Actor ID (0:All)
+2:Operation (0:Grant 1:Release)
+3:State ID",,,,,,,,,,,,,,,,,,,,
+314,Recover All,"0:actor(0:fixed 1:variable)
+1:Actor ID (0:All)",,,,,,,,,,,,,,,,,,,,
+315,Change EXP,"0:actor(0:fixed 1:variable)
+1:Actor ID (0:All)
+2:Operation (0:Increase 1:Decrease)
+3:Operand type (0:Constant, 1:Variable)
+4:Operand (set value or variable number)
+5:Show level up (true or false)",,,,,,,,,,,,,,,,,,,,
+316,Change Level,"0:actor(0:fixed 1:variable)
+1:Actor ID (0:All)
+2:Operation (0:Increase 1:Decrease)
+3:Operand type (0:Constant, 1:Variable)
+4:Operand (set value or variable number)
+5:Show level up (true or false)",,,,,,,,,,,,,,,,,,,,
+317,Change Parameter,"0:actor(0:fixed 1:variable)
+1:Actor ID (0:All)
+2:Ability(0:Maximum HP 1:Maximum MP 2:Attack 3:Defense 4:Magic 5:Magic Defense 6:Agility 7:Luck)
+3:Operation(0:Increase 1:Decrease)
+4:Operand type (0:Constant, 1:Variable)
+5:Operand (set value or variable number)",,,,,,,,,,,,,,,,,,,,
+318,Change Skill,"0:actor(0:fixed 1:variable)
+1:Actor ID (0:All)
+2:Operation(0:Remember 1:Forget)
+3:Skill ID",,,,,,,,,,,,,,,,,,,,
+319,Change Equipment,"0:Actor ID
+1:Equipment Type
+2:Weapon and Armor ID",,,,,,,,,,,,,,,,,,,,
+320,Change Name,"0:Actor ID
+1:Name",,,,,,,,,,,,,,,,,,,,
+321,Change Class,"0:Actor ID
+1:Occupation ID
+2:Save the level",,,,,,,,,,,,,,,,,,,,
+322,Change Actor Images,"0:Actor ID
+1:Face graphic file name
+2:Face Graphic Index
+3:Walking character file name
+4:Walking Character Index
+5:Battle Character File Name",,,,,,,,,,,,,,,,,,,,
+323,Change Vehicle Image,"0:Type(0:Small Ship 1:Large Ship 2:Airship)
+1:Walking character(TV) file name
+2:Walking character(TV) Index",,,,,,,,,,,,,,,,,,,,
+324,Change Nickname,"0:Actor ID
+1:Nickname",,,,,,,,,,,,,,,,,,,,
+325,Change Profile,"0:Actor ID
+1:Profile",,,,,,,,,,,,,,,,,,,,
+331,Change Enemy HP,"0:Enemy Character Index (-1:Enemy Group)
+1:Operation (0:Increase 1:Decrease)
+2:Operand type (0:Constant, 1:Variable)
+3:Operand (set value or variable number)
+4:Allow disablement (true or false)",,,,,,,,,,,,,,,,,,,,
+332,Change Enemy MP,"0:Enemy Character Index (-1:Enemy Group)
+1:Operation (0:Increase 1:Decrease)
+2:Operand type (0:Constant, 1:Variable)
+3:Operand (set value or variable number)",,,,,,,,,,,,,,,,,,,,
+342,Change Enemy TP,"0:Enemy Character Index (-1:Enemy Group)
+1:Operation (0:Increase 1:Decrease)
+2:Operand type (0:Constant, 1:Variable)
+3:Operand (set value or variable number)",,,,,,,,,,,,,,,,,,,,
+333,Change Enemy State,"0:Enemy Character Index (-1:Enemy Group)
+1:Operation (0:Grant 1:Release)
+2:State ID",,,,,,,,,,,,,,,,,,,,
+334,Enemy Recover All,0:Enemy Character Index (-1:Enemy Group),,,,,,,,,,,,,,,,,,,,
+335,Enemy Appear,0:Enemy Character Index,,,,,,,,,,,,,,,,,,,,
+336,Enemy Transform,"0:Enemy Character Index
+1:Enemy Character ID after transformation",,,,,,,,,,,,,,,,,,,,
+337,Show Battle Animation,"0:Enemy Character Index (-1:Enemy Group)
+1:Animation ID
+2:Entire enemy group targeted (true or false)",,,,,,,,,,,,,,,,,,,,
+339,Force Action,"0:Actor(0:Enemy Character 1:Actor)
+1:Actor ID or Enemy Character Index
+2:Skill ID
+3:Target (-2:Last Target -1:Random 0... :Index)",,,,,,,,,,,,,,,,,,,,
+340,Abort Battle,-,,,,,,,,,,,,,,,,,,,,
+351,Open Menu Screen,-,,,,,,,,,,,,,,,,,,,,
+352,Open Save Screen,-,,,,,,,,,,,,,,,,,,,,
+353,Game Over,-,,,,,,,,,,,,,,,,,,,,
+354,Return to Title Screen,-,,,,,,,,,,,,,,,,,,,,
+355,Script (line 2 onwards),0:script string,,,,,,,,,,,,,,,,,,,,
+655,Script (line 2 onwards),0:script string,,,,,,,,,,,,,,,,,,,,
+356,Plugin Command (MV),0:command string,,,,,,,,,,,,,,,,,,,,
+357,Plugin Command (MV),"0:Plug-in name
+1:Command name
+2:Arguments",,,,,,,,,,,,,,,,,,,,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
